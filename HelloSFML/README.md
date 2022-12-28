@@ -1,7 +1,7 @@
 
 
 # HelloSFML
-Minimal example that creates an SFML rendering window and draw a circle.
+Minimal example that creates an SFML rendering window and moves a circle using directional arrows.
 
 [Install SFML.Net](https://www.nuget.org/packages/SFML.Net) from Nuget before building the project!
 
