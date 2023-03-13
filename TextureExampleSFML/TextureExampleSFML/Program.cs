@@ -17,7 +17,7 @@ namespace TextureExampleSFML
         //creo la texture che contiene l'immagine con le animazioni del personaggio (spritesheet)
         //definisco le coordinate x,y che voglio usare della texture (ad esempio non carico i margini)
         static IntRect rect = new IntRect(0, 5, 250, 250);
-        static Texture texture = new Texture(@"C:\Users\nikof\Downloads\TextureExampleSFML\TextureExampleSFML\gfx\character.png", rect);
+        static Texture texture = new Texture(@"..\..\..\gfx\character.png", rect);
         //creo uno sprite associando la texture appena caricata
         static Sprite sprite = new Sprite(texture);
 
