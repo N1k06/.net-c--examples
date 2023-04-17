@@ -52,6 +52,9 @@ namespace PhysicsExample
                 case Keyboard.Key.Space:
                     list.Add(new GameObject(in world, in window, new Vector2f(WIDTH / 2, HEIGHT / 2), new Vector2f(10, 10), BodyType.DynamicBody, new SFML.Graphics.Color(250, 250, 0)));
                     break;
+                case Keyboard.Key.Enter:
+                    list.Add(new GameObject(in world, in window, new Vector2f(WIDTH / 2, HEIGHT / 2), new Vector2f(20, 20), BodyType.DynamicBody, new SFML.Graphics.Color(250, 0, 250)));
+                    break;
             }
         }
 
@@ -85,11 +88,11 @@ namespace PhysicsExample
             window.KeyPressed += OnKeyPressed;
             window.KeyReleased += OnKeyReleased;
 
-            GameObject g = new GameObject(in world, in window, new Vector2f(WIDTH / 2, HEIGHT / 2), new Vector2f(40,40), BodyType.DynamicBody, new SFML.Graphics.Color(250, 250, 250));
-            GameObject f1 = new GameObject(in world, in window, new Vector2f(WIDTH / 2, HEIGHT-10), new Vector2f(1000, 10), BodyType.StaticBody, new SFML.Graphics.Color(200, 200, 200));
+            GameObject g = new GameObject(in world, in window, new Vector2f(WIDTH / 2, HEIGHT / 2), new Vector2f(40, 40), BodyType.DynamicBody, new SFML.Graphics.Color(250, 250, 250));
+            GameObject f1 = new GameObject(in world, in window, new Vector2f(WIDTH / 2, HEIGHT - 10), new Vector2f(1000, 10), BodyType.StaticBody, new SFML.Graphics.Color(200, 200, 200));
             GameObject f2 = new GameObject(in world, in window, new Vector2f(WIDTH / 2, 10), new Vector2f(1000, 10), BodyType.StaticBody, new SFML.Graphics.Color(200, 200, 200));
             GameObject f3 = new GameObject(in world, in window, new Vector2f(10, HEIGHT / 2), new Vector2f(10, 1000), BodyType.StaticBody, new SFML.Graphics.Color(200, 200, 200));
-            GameObject f4 = new GameObject(in world, in window, new Vector2f(WIDTH-10, HEIGHT / 2), new Vector2f(10, 1000), BodyType.StaticBody, new SFML.Graphics.Color(200, 200, 200));
+            GameObject f4 = new GameObject(in world, in window, new Vector2f(WIDTH - 10, HEIGHT / 2), new Vector2f(10, 1000), BodyType.StaticBody, new SFML.Graphics.Color(200, 200, 200));
 
             float time_step = (1.0f / 60.0f);
 
@@ -105,7 +108,7 @@ namespace PhysicsExample
                 window.DispatchEvents();
 
                 world.Step(time_step, velocity_iterations, position_iterations);
-                
+
                 g.ApplyLinearImpulse(force);
                 g.UpdateSFMLObject();
 
