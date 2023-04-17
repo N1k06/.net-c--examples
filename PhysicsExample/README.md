@@ -5,7 +5,7 @@ Example of Box2D phyiscs engine interacting with SFML for rendering and I/O.
 
 ![A screenshot of the running application](screen.png "")
 
-[Install SFML.Net](https://www.nuget.org/packages/SFML.Net) and [SFML.Net](https://www.nuget.org/packages/Box2DSharp) from Nuget before building the project!
+[Install SFML.Net](https://www.nuget.org/packages/SFML.Net) and [Box2DSharp](https://www.nuget.org/packages/Box2DSharp) from Nuget before building the project!
 
  - Import the code in Visual Studio 
  - Right-click the project from "Solution Explorer"
