@@ -92,7 +92,8 @@ namespace PhysicsExample
             this.rectangle_shape.Position = this.pos;
 
             //sfml usa gradi, box2d radianti. devo convertire!
-            this.angle = this.body.GetAngle() * (Convert.ToSingle(Math.PI) / 180);
+            this.angle = this.body.GetAngle() * (180.0f / Convert.ToSingle(Math.PI));
+            this.rectangle_shape.Rotation = this.angle;
         }
 
         public void DrawSFMLObject()
