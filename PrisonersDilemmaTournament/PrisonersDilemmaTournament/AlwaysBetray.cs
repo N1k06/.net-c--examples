@@ -4,12 +4,13 @@
     {
         public bool MakeChoice()
         {
-            return false; // Tradisci sempre
+            //non collabora mai
+            return false;
         }
 
         public void InformChoice(bool otherPrisonersChoice)
         {
-            // Non fa nulla con l'informazione ricevuta
+            //non utilizza l'informazione ricevuta
         }
     }
 }

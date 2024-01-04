@@ -8,7 +8,7 @@ namespace PrisonersDilemmaTournament
         private int _n_rounds = 10;
         private List<TournamentPlayer> _players = new List<TournamentPlayer>();
 
-        private int[,,] _rewards = { { {1,1},{5,0} },
+        private int[,,] _payoffs = { { {1,1},{5,0} },
                                      { {0,5},{3,3} } };
 
         public void SetNRounds(int n_rounds)
@@ -17,15 +17,15 @@ namespace PrisonersDilemmaTournament
                 _n_rounds = n_rounds;
         }
 
-        public void SetRewards(int[,,] rewards)
+        public void SetRewards(int[,,] payoffs)
         {
-            if (rewards.GetLength(0) == 2 && rewards.GetLength(1) == 2 && rewards.GetLength(2) == 2)
-                _rewards = rewards;
+            if (payoffs.GetLength(0) == 2 && payoffs.GetLength(1) == 2 && payoffs.GetLength(2) == 2)
+                _payoffs = payoffs;
         }
 
         public void SetRewards(int reward, int punishment, int sucker, int temptation)
         {
-            _rewards = new int [,,] { { {punishment,punishment},{temptation,sucker} },
+            _payoffs = new int [,,] { { {punishment,punishment},{temptation,sucker} },
                                       { {sucker,    temptation},{reward,    reward} } };
         }
 
@@ -34,6 +34,7 @@ namespace PrisonersDilemmaTournament
             TournamentPlayer player = new TournamentPlayer(prisoner);
             _players.Add(player);
         }
+
 
         public void Challenge(TournamentPlayer p1, TournamentPlayer p2)
         {
@@ -46,8 +47,8 @@ namespace PrisonersDilemmaTournament
             int i = Convert.ToInt32(choice1);
             int j = Convert.ToInt32(choice2);
 
-            int reward1 = _rewards[i, j, 0];
-            int reward2 = _rewards[i, j, 1];
+            int reward1 = _payoffs[i, j, 0];
+            int reward2 = _payoffs[i, j, 1];
 
             p1.AddScore(reward1);
             p2.AddScore(reward2);
@@ -69,7 +70,7 @@ namespace PrisonersDilemmaTournament
                     }
 
                     //richiama il costruttore di prisoner senza conoscere in anticipo
-                    //il tipo dell'istanza. in questa maniera si resetta la memoria del 
+                    //la classe dell'istanza. in questa maniera si resetta la memoria del 
                     //prigioniero prima di altre sfide.
                     p1.prisoner = Activator.CreateInstance(p1.prisoner.GetType()) as IPrisoner;
                     p2.prisoner = Activator.CreateInstance(p2.prisoner.GetType()) as IPrisoner;

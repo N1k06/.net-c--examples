@@ -4,12 +4,13 @@
     {
         public bool MakeChoice()
         {
-            return true; // Collabora sempre
+            // collabora sempre
+            return true;
         }
 
         public void InformChoice(bool otherPrisonersChoice)
         {
-            // Non fa nulla con l'informazione ricevuta
+            //non utilizza l'informazione ricevuta
         }
     }
 }

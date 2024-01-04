@@ -1,17 +1,25 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrisonersDilemmaTournament", "PrisonersDilemmaTournament\PrisonersDilemmaTournament.csproj", "{E527A28E-A8B8-4712-9EEE-52E388C05523}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrisonersDilemmaTournament", "PrisonersDilemmaTournament\PrisonersDilemmaTournament.csproj", "{8596F3C4-D972-4123-AC9E-154FADF43108}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E527A28E-A8B8-4712-9EEE-52E388C05523}.Debug|x86.ActiveCfg = Debug|x86
-		{E527A28E-A8B8-4712-9EEE-52E388C05523}.Debug|x86.Build.0 = Debug|x86
-		{E527A28E-A8B8-4712-9EEE-52E388C05523}.Release|x86.ActiveCfg = Release|x86
-		{E527A28E-A8B8-4712-9EEE-52E388C05523}.Release|x86.Build.0 = Release|x86
+		{8596F3C4-D972-4123-AC9E-154FADF43108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8596F3C4-D972-4123-AC9E-154FADF43108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8596F3C4-D972-4123-AC9E-154FADF43108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8596F3C4-D972-4123-AC9E-154FADF43108}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AED0D087-8E0C-45CE-A45B-6F5829FBE951}
 	EndGlobalSection
 EndGlobal
