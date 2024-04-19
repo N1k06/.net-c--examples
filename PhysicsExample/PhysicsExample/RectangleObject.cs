@@ -18,7 +18,7 @@ using Box2DSharp.Collision.Shapes;
 
 namespace PhysicsExample
 {
-    class GameObject
+    class RectangleObject
     {
         //oggetto SFML per visualizzare il rettangolo
         protected RectangleShape rectangle_shape;
@@ -45,7 +45,7 @@ namespace PhysicsExample
 
         SFML.Graphics.Color color;
 
-        public GameObject(in World world, in RenderWindow window, Vector2f pos, Vector2f dim, BodyType body_type, SFML.Graphics.Color color)
+        public RectangleObject(in World world, in RenderWindow window, Vector2f pos, Vector2f dim, BodyType body_type, SFML.Graphics.Color color)
         {
             this.world = world;
             this.window = window;
