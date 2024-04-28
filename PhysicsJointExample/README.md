@@ -6,9 +6,7 @@ A very rudimentary game engine based on SFML and Box2D, supporting:
  - rectangle objects
  - circle objects
  - camera (movement, zoom in/out)
- - basic jointing
- -- revolute joint
- -- wheel joint
+ - basic jointing (revolute joint, wheel joint)
 
 ![A screenshot of the running application](screen.png "")
 
