@@ -1,5 +1,5 @@
 # TiledSFMLMapExample
-A very rudimentary example of loading a Tiled map (.tsx, .tmx, .png) with TiledCS and renders a layer using SFML.
+A very rudimentary example that loads a Tiled map (.tsx, .tmx, .png) using TiledCS and renders a layer using SFML.
 
 Install [SFML.Net](https://www.nuget.org/packages/SFML.Net) and [TiledCS](https://www.nuget.org/packages/TiledCS) from Nuget before building the project!
 
