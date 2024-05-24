@@ -15,6 +15,7 @@ namespace HelloSFML
 
         //creazione forma circolare
         static CircleShape circle1 = new CircleShape(50);
+        static RectangleShape rectangleShape = new RectangleShape(new Vector2f(50,50));
 
         static private void OnKeyPressed(object sender, KeyEventArgs e)
         {
